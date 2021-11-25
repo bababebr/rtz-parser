@@ -1,0 +1,201 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Objects" msdata:Locale="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ObjectId" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="Type">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="LatMin" type="xs:double" />
+                <xs:element name="LonMin" type="xs:double" />
+                <xs:element name="LatMax" type="xs:double" />
+                <xs:element name="LonMax" type="xs:double" />
+                <xs:element name="LayerId" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="Vertices">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="2147483647" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Rotation" type="xs:double" />
+                <xs:element name="CreateTime" type="xs:dateTime" />
+                <xs:element name="CreateShip">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ModifyTime" type="xs:dateTime" />
+                <xs:element name="ModifyUser">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Label" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Note" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ChartObjectInfo" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ChartCell" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ChartEdition" type="xs:int" minOccurs="0" />
+                <xs:element name="Archived" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TimeLabel" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="DateDependentType" type="xs:int" minOccurs="0" />
+                <xs:element name="DateDependentStart" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DateDependentEnd" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="HasLight" type="xs:boolean" minOccurs="0" />
+                <xs:element name="LineSegmentType" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="GeometryAttributes" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="CustomLineColor" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="LineStyle" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="LineWeight" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="LineArrowType" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ShowArrowsAtStart" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ShowArrowsAtEnd" type="xs:boolean" minOccurs="0" />
+                <xs:element name="FillColor" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="FillPattern" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Opacity" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Altitudes" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="2147483647" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Layers" msdata:Locale="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="Name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Description" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Object.Objects" />
+        <xs:field xpath="ObjectId" />
+      </xs:unique>
+      <xs:unique name="Layers_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Layers" />
+        <xs:field xpath="Id" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
