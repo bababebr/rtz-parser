@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<route version="1.0" xmlns="http://www.cirm.org/RTZ/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cirm.org/rtz/RTZ Schema version 1_0.xsd">
+  <routeInfo routeName="Fujairah - Mesaieed_North, Qatar_NAT074" />
+  <waypoints>
+    <waypoint id="30" revision="100" name="Fujairah Anchorage B" radius="0">
+      <position lat="25.205" lon="56.533333" />
+    </waypoint>
+    <waypoint id="10" revision="59" name="Fujairah OPL" radius="1">
+      <position lat="25.205" lon="56.633333" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="5" legNote2="Depth 100; UKC C/D; LocalReq 0; LegType R; WD 1.025; MinDepthPos 25-11.9N 056-32.1E ; " />
+    </waypoint>
+    <waypoint id="11" revision="67" name="SOH SEC REP" radius="1">
+      <position lat="25.658334" lon="56.766667" />
+      <leg starboardXTD="2" portsideXTD="2" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 100; UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 25-25,3N 056-39.6E; " />
+    </waypoint>
+    <waypoint id="12" revision="33" name="Hormuz Approach" radius="1">
+      <position lat="26.346667" lon="56.783333" />
+      <leg starboardXTD="2" portsideXTD="2" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 84 ;UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 26-19.8N 056-47.5E; " />
+    </waypoint>
+    <waypoint id="13" revision="33" name="TSS In" radius="1">
+      <position lat="26.485" lon="56.686667" />
+      <leg starboardXTD="2" portsideXTD="2" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 79; UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 26-26.4N 056-45.1E; " />
+    </waypoint>
+    <waypoint id="14" revision="65" name="TSS Strait of Hormuz" radius="1">
+      <position lat="26.625333" lon="56.590834" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 57;UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 26-36.7N 056-35.3E; " />
+    </waypoint>
+    <waypoint id="15" revision="34" name="Hormuz TSS - 2" radius="1">
+      <position lat="26.625" lon="56.465" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 66;UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 26-38.3N 056-31.8E; " />
+    </waypoint>
+    <waypoint id="34" revision="34" name="TSS Out" radius="1">
+      <position lat="26.583834" lon="56.294" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 75; UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 26-36.9N 056-25.5E;" />
+    </waypoint>
+    <waypoint id="36" revision="54" name="Off Saqr, UAE" radius="1">
+      <position lat="26.095834" lon="55.756667" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 72; UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 26-05.2N 055-47.0E; " />
+    </waypoint>
+    <waypoint id="50" revision="28" name="SOH SEC REP" radius="1">
+      <position lat="26.005" lon="55.6425" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 63; UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 26-01.4N 055-40.3E; " />
+    </waypoint>
+    <waypoint id="51" revision="81" name="Of Mubaraka Prod" radius="1">
+      <position lat="25.651667" lon="55.146667" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 20;UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 25-50.1N 055-22.1E;" />
+    </waypoint>
+    <waypoint id="52" revision="15" name="Off Fateh Central Complex" radius="1">
+      <position lat="25.476667" lon="54.445" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 21;UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 25-37.7N 055-08.1E;" />
+    </waypoint>
+    <waypoint id="40" revision="56" name="West Central Complex" radius="1">
+      <position lat="25.418167" lon="54.2" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 21;UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 25-26.6N 054-17.7E;" />
+    </waypoint>
+    <waypoint id="41" revision="71" name="Off DAS, UAE" radius="0.5">
+      <position lat="25.641667" lon="53.166667" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 21;UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 25-37.6N 053-12.8E;" />
+    </waypoint>
+    <waypoint id="1" revision="0" name="South of Reshadat Oil Field" radius="0.5">
+      <position lat="25.686667" lon="52.88" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 19.2;UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 25-39.5N 053-02.4E;" />
+    </waypoint>
+    <waypoint id="2" revision="0" name="Isolated Danger by" radius="0.5">
+      <position lat="25.75" lon="52.641667" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 41;UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 25-40.0N 052-52.4E;" />
+    </waypoint>
+    <waypoint id="3" revision="17" name="North Halul Isl" radius="0.5">
+      <position lat="25.75" lon="52.31" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 24;UKC C/D; LocalReq 0; LegType C; WD 1.025; MinDepthPos 25-44.5N 052-21.0E;" />
+    </waypoint>
+    <waypoint id="4" revision="48" name="Qatar by" radius="0.5">
+      <position lat="25.673333" lon="51.975" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 19.2; UKC B; LocalReq 0; LegType C; WD 1.025; MinDepthPos 25-40.2N 051-59.8E;" />
+    </waypoint>
+    <waypoint id="5" revision="0" name="Off Wrecks" radius="0.5">
+      <position lat="25.585" lon="51.926667" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 17.0; UKC B; LocalReq 0; LegType B; WD 1.025; MinDepthPos 25-35.5N 051-56.9E;" />
+    </waypoint>
+    <waypoint id="6" revision="116" name="Off 9m bank" radius="0.5">
+      <position lat="25.5" lon="51.819167" />
+      <leg starboardXTD="0.75" portsideXTD="0.75" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 17.1; UKC B; LocalReq 0; LegType R; WD 1.025; MinDepthPos 25-33.9N 051-55.0E;" />
+    </waypoint>
+    <waypoint id="7" revision="54" name="Anchorage &quot;A&quot;" radius="0.5">
+      <position lat="25.32" lon="51.819167" />
+      <leg starboardXTD="0.5" portsideXTD="0.5" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 17.1; UKC B; LocalReq 0; LegType R; WD 1.025; MinDepthPos 25-27.1N 051-49.3E;" />
+    </waypoint>
+    <waypoint id="8" revision="8" name="Mishut by" radius="0.5">
+      <position lat="25.27" lon="51.773333" />
+      <leg starboardXTD="0.25" portsideXTD="0.25" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 17.0; UKC B; LocalReq 0; LegType R; WD 1.025; MinDepthPos 25-16.6N 051-46.7E;" />
+    </waypoint>
+    <waypoint id="9" revision="8" name="QPC North by" radius="0.5">
+      <position lat="25.233334" lon="51.751667" />
+      <leg starboardXTD="0.25" portsideXTD="0.25" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 16.0; UKC B; LocalReq 0; LegType R; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="16" revision="9" name="PBG" radius="0.5">
+      <position lat="25.22" lon="51.753333" />
+      <leg starboardXTD="0.25" portsideXTD="0.25" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 16.1; UKC B; LocalReq 0; LegType R; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="17" revision="6" name="Approach by" radius="0.5">
+      <position lat="25.211667" lon="51.736667" />
+      <leg starboardXTD="0.15" portsideXTD="0.15" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 19.5; UKC B; LocalReq 0; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="18" revision="15" name="E-01 by. East Channel Entrance" radius="0.5">
+      <position lat="25.18" lon="51.7375" />
+      <leg starboardXTD="0.1" portsideXTD="0.1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 15.0; UKC B; LocalReq 0; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="19" revision="1" name="E-03 by" radius="0.5">
+      <position lat="25.165" lon="51.735667" />
+      <leg starboardXTD="0.08" portsideXTD="0.08" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="20" revision="1" name="E-05 by" radius="0.2">
+      <position lat="25.156667" lon="51.7325" />
+      <leg starboardXTD="0.1" portsideXTD="0.1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="21" revision="1" name="E-11 by" radius="0.5">
+      <position lat="25.11" lon="51.726667" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="22" revision="1" name="E-15 by" radius="0.5">
+      <position lat="25.085" lon="51.727834" />
+      <leg starboardXTD="0.15" portsideXTD="0.15" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="23" revision="1" name="E-25 by" radius="0.5">
+      <position lat="25.01" lon="51.761667" />
+      <leg starboardXTD="0.3" portsideXTD="0.3" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="24" revision="1" name="E-27 by" radius="0.5">
+      <position lat="25" lon="51.771167" />
+      <leg starboardXTD="0.08" portsideXTD="0.08" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="25" revision="1" name="E-33 by" radius="0.5">
+      <position lat="24.958333" lon="51.789333" />
+      <leg starboardXTD="0.08" portsideXTD="0.08" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="26" revision="1" name="E-36 by" radius="0.5">
+      <position lat="24.948334" lon="51.790833" />
+      <leg starboardXTD="0.08" portsideXTD="0.08" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="27" revision="1" name="E-37 by" radius="0.5">
+      <position lat="24.936667" lon="51.785834" />
+      <leg starboardXTD="0.1" portsideXTD="0.1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="28" revision="1" name="E-41 by" radius="0.5">
+      <position lat="24.924167" lon="51.768333" />
+      <leg starboardXTD="0.07" portsideXTD="0.07" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="29" revision="1" name="Se Arif by" radius="0.5">
+      <position lat="24.896667" lon="51.723334" />
+      <leg starboardXTD="0.08" portsideXTD="0.08" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="31" revision="34" name="S Arif-1" radius="0.25">
+      <position lat="24.855" lon="51.686667" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="38" revision="0" name="S Arif-2" radius="0.25">
+      <position lat="24.855" lon="51.676667" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="32" revision="27" name="I-01 by North Inner In" radius="0.1">
+      <position lat="24.875" lon="51.666667" />
+      <leg starboardXTD="0.15" portsideXTD="0.15" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 14.2; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="33" revision="76" name="I-05 by" radius="0.7">
+      <position lat="24.898667" lon="51.668833" />
+      <leg starboardXTD="0.08" portsideXTD="0.08" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="35" revision="80" name="I-11 by" radius="0.5">
+      <position lat="24.917" lon="51.654333" />
+      <leg starboardXTD="0.08" portsideXTD="0.08" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="37" revision="57" name="FWB-01" radius="0">
+      <position lat="24.911333" lon="51.601667" />
+      <leg starboardXTD="0.1" portsideXTD="0.1" geometryType="Loxodrome" speedMin="5" speedMax="10" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ;" />
+    </waypoint>
+    <waypoint id="39" revision="0" name="North SBM" radius="0">
+      <position lat="24.895833" lon="51.5825" />
+      <leg starboardXTD="0.1" portsideXTD="0.1" geometryType="Loxodrome" speedMin="5" speedMax="5" legNote2="Depth 13.5; UKC B; LocalReq 1.52; LegType P; WD 1.025; MinDepthPos ; bDepth 19.6; bUKC B;" />
+    </waypoint>
+  </waypoints>
+  <schedules>
+    <schedule id="1" name="CalculatedSchedule">
+      <calculated>
+        <sheduleElement waypointId="10" speed="5" />
+        <sheduleElement waypointId="11" speed="10" />
+        <sheduleElement waypointId="12" speed="10" />
+        <sheduleElement waypointId="13" speed="10" />
+        <sheduleElement waypointId="14" speed="10" />
+        <sheduleElement waypointId="15" speed="10" />
+        <sheduleElement waypointId="34" speed="10" />
+        <sheduleElement waypointId="36" speed="10" />
+        <sheduleElement waypointId="50" speed="10" />
+        <sheduleElement waypointId="51" speed="10" />
+        <sheduleElement waypointId="52" speed="10" />
+        <sheduleElement waypointId="40" speed="10" />
+        <sheduleElement waypointId="41" speed="10" />
+        <sheduleElement waypointId="1" speed="10" />
+        <sheduleElement waypointId="2" speed="10" />
+        <sheduleElement waypointId="3" speed="10" />
+        <sheduleElement waypointId="4" speed="10" />
+        <sheduleElement waypointId="5" speed="10" />
+        <sheduleElement waypointId="6" speed="10" />
+        <sheduleElement waypointId="7" speed="10" />
+        <sheduleElement waypointId="8" speed="10" />
+        <sheduleElement waypointId="9" speed="10" />
+        <sheduleElement waypointId="16" speed="10" />
+        <sheduleElement waypointId="17" speed="10" />
+        <sheduleElement waypointId="18" speed="10" />
+        <sheduleElement waypointId="19" speed="10" />
+        <sheduleElement waypointId="20" speed="10" />
+        <sheduleElement waypointId="21" speed="10" />
+        <sheduleElement waypointId="22" speed="10" />
+        <sheduleElement waypointId="23" speed="10" />
+        <sheduleElement waypointId="24" speed="10" />
+        <sheduleElement waypointId="25" speed="10" />
+        <sheduleElement waypointId="26" speed="10" />
+        <sheduleElement waypointId="27" speed="10" />
+        <sheduleElement waypointId="28" speed="10" />
+        <sheduleElement waypointId="29" speed="10" />
+        <sheduleElement waypointId="31" speed="10" />
+        <sheduleElement waypointId="38" speed="10" />
+        <sheduleElement waypointId="32" speed="10" />
+        <sheduleElement waypointId="33" speed="10" />
+        <sheduleElement waypointId="35" speed="10" />
+        <sheduleElement waypointId="37" speed="10" />
+        <sheduleElement waypointId="39" speed="5" />
+      </calculated>
+    </schedule>
+  </schedules>
+</route>
