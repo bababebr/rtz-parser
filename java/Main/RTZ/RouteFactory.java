@@ -29,7 +29,7 @@ public class RouteFactory implements Serializable {
             routeFileReader = new FileReader(routeFile);
             loadWP();
             calculateLegs();
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e ) {
             System.err.println("Header File Not Found, check \'ref\' folder for RTZheader.rtz file.");
             System.out.println("or route file is not found.");
         } catch (IOException e) {
@@ -109,9 +109,9 @@ public class RouteFactory implements Serializable {
 
     private boolean validate(){ //Comparation of route header to the RTZ required pattern
         try {
-            byte[] patternV1 = Files.readAllBytes(Path.of("src\\java\\Main\\Data\\RTZ Schema.header")); //encrypted pattern located in project dir
-            byte[] patterntV2 = Files.readAllBytes(Path.of("src\\java\\Main\\Data\\RTZ Schema.header"));
-            byte[] patterntV3 = Files.readAllBytes(Path.of("src\\java\\Main\\Data\\RTZ Schema.header"));
+            byte[] patternV1 = Files.readAllBytes(Path.of("java\\Main\\Data\\RTZ Schema.header")); //encrypted pattern located in project dir
+            byte[] patterntV2 = Files.readAllBytes(Path.of("java\\Main\\Data\\RTZ Schema.header"));
+            byte[] patterntV3 = Files.readAllBytes(Path.of("java\\Main\\Data\\RTZ Schema.header"));
             byte[] header = Encryptor.Encrypt(getHeader());
 
             if(Encryptor.equal(patternV1, header)){

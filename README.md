@@ -1,6 +1,6 @@
 RTZ parser writen on Java. 
 This is the easiest way to work with RTZ files if you want to create your own maritime navigational application
-or just work with RTZ files Build-in features 
+or just work with RTZ files Build-in features:
 * Waypoints and Legs creations 
 * Calculation of Great Circle and Rhumbline distances and courses 
 * ETA calculation 
