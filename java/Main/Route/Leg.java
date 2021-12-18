@@ -1,5 +1,7 @@
 package Main.Route;
 
+import Main.Enums.CATZOC;
+import Main.Enums.LegTypes;
 import Main.Tools.NauticalMath;
 
 import java.io.Serializable;
@@ -17,6 +19,8 @@ public class Leg implements Serializable {
     private String legNote;
     private Waypoint wpStart;
     private Waypoint wpEnd;
+    private CATZOC catzoc;
+    private LegTypes legType;
     /**
      * Calculates Rhumbline and Great Circle line between two Waypoints.
      *
@@ -43,13 +47,17 @@ public class Leg implements Serializable {
         name = String.format("%s - %s",wpStart.getName(), wpEnd.getName());
         wpIdBegin = wpStart.getId();
         wpIdEnd = wpEnd.getId();
-        GCcoure = n.GC_Cource(wpStart.getPosition(),wpEnd.getPosition());
+        GCcoure = n.GC_Course(wpStart.getPosition(),wpEnd.getPosition());
         GCDist = n.GC_Dist(wpStart.getPosition(),wpEnd.getPosition());
         RLCoure = n.RL_Course(wpStart.getPosition(),wpEnd.getPosition());
         RLDist = n.RL_Dist(wpStart.getPosition(), wpEnd.getPosition());
         legNote = wpStart.getLegNote();
     }
 
+    public void recalculateRl_Dist(){
+        NauticalMath n = new NauticalMath();
+        RLDist = n.RL_Dist(wpStart.getPosition(), wpEnd.getPosition());
+    }
 
     public int getId() {
         return id;
@@ -137,6 +145,22 @@ public class Leg implements Serializable {
 
     public void setWpEnd(Waypoint wpEnd) {
         this.wpEnd = wpEnd;
+    }
+
+    public CATZOC getCatzoc() {
+        return catzoc;
+    }
+
+    public void setCatzoc(CATZOC catzoc) {
+        this.catzoc = catzoc;
+    }
+
+    public LegTypes getLegType() {
+        return legType;
+    }
+
+    public void setLegType(LegTypes legType) {
+        this.legType = legType;
     }
 
     @Override

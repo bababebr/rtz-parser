@@ -6,7 +6,6 @@ public class Coordinates implements Serializable {
     static final long serialVersionUID = -5856838176003846381l;
     private double x;
     private double y;
-
     private String lat;
     private String lon;
 
@@ -17,11 +16,20 @@ public class Coordinates implements Serializable {
     public Coordinates(double x, double y) {
         this.x = x;
         this.y = y;
+        doubleToStringFormat();
     }
 
     public Coordinates(String lat, String lon) {
-        this.lat = lat;
-        this.lon = lon;
+        String latPattern = "[0-9]{1,2}[-][0-9]{2}[.][0-9]*[N|S]";
+        String logPattern = "[0-9]{1,3}[-][0-9]{2}[.][0-9]*[E|S]";
+        this.lat = lat.matches(latPattern) == true ? lat : "";
+        this.lon = lon.matches(logPattern) == true ? lon : "";
+
+        if(lat.isBlank() || lon.isBlank()){
+            System.err.println("Wrong coordinates format");
+            return;
+        }
+
         if(lon.startsWith("0")){
             lon = lon.substring(1);
         }
@@ -32,23 +40,7 @@ public class Coordinates implements Serializable {
         if(lat.endsWith("N")){
             this.x = latDeg + (latMin / 60);
         }
-        else if(lat.endsWith("")) {
-            this.x = -(latDeg + (latMin / 60));
-        }
-
-        if(lon.endsWith("E")){
-            this.y = lonDeg + (lonMin / 60);
-        }
-        else {
-            this.y = -(lonDeg + (lonMin / 60));
-        }
-        this.x = latDeg + (latMin / 60);
-        this.y = lonDeg + (lonMin / 60);
-
-        if(lat.endsWith("N")){
-            this.x = latDeg + (latMin / 60);
-        }
-        else {
+        else if(lat.endsWith("S")) {
             this.x = -(latDeg + (latMin / 60));
         }
 
@@ -60,7 +52,7 @@ public class Coordinates implements Serializable {
         }
     }
     public Coordinates(String latLong){
-        String pattern = "[0-9]{2}[-][0-9]{2}[.][0-9]*[N|S] [0-9]{3}[-][0-9]{2}[.][0-9]*[E|S]";
+        String pattern = "[0-9]{1,2}[-][0-9]{2}[.][0-9]*[N|S] [0-9]{1,3}[-][0-9]{2}[.][0-9]*[E|S]";
         if(latLong.matches(pattern)){
             this.lat = latLong.split("[ ]")[0];
             this.lon = latLong.split("[ ]")[1];
@@ -104,6 +96,24 @@ public class Coordinates implements Serializable {
         }
     }
 
+    private void doubleToStringFormat() {
+        int latDeg = (int) x;
+        double latMin = (x - latDeg) * 60;
+        int lonDeg = (int) y;
+        double lonMin = (y - lonDeg) * 60;
+        if(x < 0d) {
+            lat = String.format("%d-%.2f",latDeg,latMin).concat("S");
+        }
+        else {
+            lat = String.format("%d-%.2f",latDeg,latMin).concat("N");
+        }
+        if(y < 0d){
+            lon = String.format("%d-%.2f",lonDeg,lonMin).concat("W");
+        }
+        else {
+            lon = String.format("%d-%.2f",lonDeg, lonMin).concat("E");
+        }
+    }
 
     /**
      * Calculation of Direction vector
@@ -292,5 +302,15 @@ public class Coordinates implements Serializable {
         this.lon = lon;
     }
 
+    @Override
+    public String toString() {
+        return lat + " " + lon;
+    }
 
+    @Override
+    public boolean equals(Object obj) {
+        Coordinates o = (Coordinates) obj;
+        double threshold = 0.0001d;
+        return (Math.abs(x-o.x) <= threshold || Math.abs(y-o.y) <= threshold);
+    }
 }

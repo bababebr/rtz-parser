@@ -2,6 +2,7 @@ package Main.Route;
 
 import Main.Tools.ETA_Calculator;
 import com.sun.istack.NotNull;
+
 import java.io.Serializable;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
@@ -32,6 +33,11 @@ public class Route implements Serializable {
         calcDist();
     }
 
+    public void recalculateRLDist(){
+        for(Leg l : legList){
+            l.recalculateRl_Dist();
+        }
+    }
     private void calcDist(){
         int legID = 0;
         distanceSailed_GC = new double[legList.size()];

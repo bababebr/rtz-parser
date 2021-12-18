@@ -110,8 +110,8 @@ public class RouteFactory implements Serializable {
     private boolean validate(){ //Comparation of route header to the RTZ required pattern
         try {
             byte[] patternV1 = Files.readAllBytes(Path.of("java\\Main\\Data\\RTZ Schema.header")); //encrypted pattern located in project dir
-            byte[] patterntV2 = Files.readAllBytes(Path.of("java\\Main\\Data\\RTZ Schema.header"));
-            byte[] patterntV3 = Files.readAllBytes(Path.of("java\\Main\\Data\\RTZ Schema.header"));
+            byte[] patterntV2 = Files.readAllBytes(Path.of("java\\Main\\Data\\RTZ Schema version 1_2.header"));
+            byte[] patterntV3 = Files.readAllBytes(Path.of("java\\Main\\Data\\RTZheader_V1_0.header"));
             byte[] header = Encryptor.Encrypt(getHeader());
 
             if(Encryptor.equal(patternV1, header)){

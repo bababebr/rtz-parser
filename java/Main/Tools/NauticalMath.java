@@ -27,7 +27,7 @@ public class NauticalMath {
                 * cosLatC1 * cosLatC2 + (sinLatC1 * sinLatC2)))*60;
         return result;
     }
-    public double GC_Cource(Coordinates  c1, Coordinates c2) {
+    public double GC_Course(Coordinates  c1, Coordinates c2) {
         //Course 0-180
         if(Math.abs(c1.getY()-c2.getY()) <= 0.00001d){
 
@@ -91,13 +91,13 @@ public class NauticalMath {
     public double RL_Dist(Coordinates c1, Coordinates c2) {
         double diffLat = c2.getX() - c1.getX();
         double diffLon = c2.getY() - c1.getY();
-        if(diffLat <= 0.00001d){
-            return Math.cos(Math.toRadians(c1.getX())) * Math.abs(diffLon*60) * 1.001795274d;
+        if(Math.abs(diffLat) <= 0.00001d){
+            return Math.abs(Math.cos(Math.toRadians(c1.getX())) * Math.abs(diffLon*60) * 1.001795274d);
         }
         double s = aNm * (1d/Math.cos(Math.toRadians(RL_Course(c1,c2)))) *
                 Math.abs((1d-1d/4d*e*e)*Math.toRadians(diffLat) -
                 (3d/8d*e*e*(Math.sin(Math.toRadians(2d*c2.getX())) - Math.sin(Math.toRadians(2d*c1.getX())))));
-        return s;
+        return Math.abs(s);
     }
 
     public double meridinalParts(double lat){

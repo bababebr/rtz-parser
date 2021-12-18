@@ -1,10 +1,8 @@
 package Main.Hibernates;
 
-import Main.Hibernates.Entities.ObjectEntity;
 import Main.Hibernates.Entities.RouteEntity;
 import Main.Route.Route;
 import Main.RTZ.RouteFactory;
-import Main.SperryMarine.Object.Objects;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -19,19 +17,6 @@ public class HibernatesQueries {
         try(Session session = HibernatesUtil.getSessionFactory().openSession()){
             transaction = session.beginTransaction();
             System.out.println(transaction.getStatus());
-            transaction.commit();
-            session.close();
-        }
-    }
-
-    public static void insertObject(Objects o){
-        Transaction transaction = null;
-
-        try(Session session = HibernatesUtil.getSessionFactory().openSession()) {
-            transaction = session.beginTransaction();
-            session.save(new ObjectEntity(o));
-            System.out.println(String.format("Route %s inserted to DB",o.getName()));
-
             transaction.commit();
             session.close();
         }
@@ -58,18 +43,6 @@ public class HibernatesQueries {
             transaction.commit();
             session.close();
             return null;
-        }
-    }
-
-    public static Objects fetchObject(int id){
-        Transaction transaction;
-        try(Session session = HibernatesUtil.getSessionFactory().openSession()) {
-            transaction = session.beginTransaction();
-            ObjectEntity o = session.get(ObjectEntity.class,id);
-
-            transaction.commit();
-            session.close();
-            return o.toObject();
         }
     }
 
