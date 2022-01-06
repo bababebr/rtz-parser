@@ -1,5 +1,4 @@
 package Main;
-
 import Main.Tools.Coordinates;
 import Main.Tools.NauticalMath;
 
