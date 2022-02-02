@@ -2,6 +2,7 @@ package Main.Route;
 
 import Main.Enums.CATZOC;
 import Main.Enums.LegTypes;
+import Main.Tools.Coordinates;
 import Main.Tools.NauticalMath;
 
 import java.io.Serializable;
@@ -19,8 +20,13 @@ public class Leg implements Serializable {
     private String legNote;
     private Waypoint wpStart;
     private Waypoint wpEnd;
+
+    private double depth;
+    private double waterDensity;
+    private double localUKCreq;
     private CATZOC catzoc;
     private LegTypes legType;
+    private Coordinates minDepthPos;
     /**
      * Calculates Rhumbline and Great Circle line between two Waypoints.
      *
@@ -52,6 +58,40 @@ public class Leg implements Serializable {
         RLCoure = n.RL_Course(wpStart.getPosition(),wpEnd.getPosition());
         RLDist = n.RL_Dist(wpStart.getPosition(), wpEnd.getPosition());
         legNote = wpStart.getLegNote();
+        try {
+            parseLegtNote();
+        }
+        catch (Exception e){
+
+        }
+    }
+
+    private void parseLegtNote(){
+        int pos = 0;
+        if(legNote.contains("UKC")){
+            pos = legNote.indexOf("UKC") + 4;
+            catzoc = CATZOC.valueOf(legNote.substring(pos,legNote.indexOf(";",pos)));
+        }
+        if(legNote.contains("Depth")){
+            pos = legNote.indexOf("Depth") + 6;
+            depth = Double.parseDouble(legNote.substring(pos,legNote.indexOf(";",pos)));
+        }
+        if(legNote.contains("WD")){
+            pos = legNote.indexOf("WD") + 3;
+            waterDensity = Double.parseDouble(legNote.substring(pos,legNote.indexOf(";",pos)));
+        }
+        if(legNote.contains("LocalReq")){
+            pos = legNote.indexOf("LocalReq") + 9;
+             localUKCreq = Double.parseDouble(legNote.substring(pos,legNote.indexOf(";",pos)));
+        }
+        if(legNote.contains("MinDepthPos")){
+            pos = legNote.indexOf("MinDepthPos") + 12;
+            minDepthPos = new Coordinates(legNote.substring(pos,legNote.indexOf(";",pos)));
+        }
+        if(legNote.contains("LegType")){
+            pos = legNote.indexOf("LegType") + 8;
+            legType = LegTypes.valueOf(legNote.substring(pos,legNote.indexOf(";",pos)));
+        }
     }
 
     public void recalculateRl_Dist(){
@@ -167,16 +207,44 @@ public class Leg implements Serializable {
     public String toString() {
         return "Leg{" +
                 "id=" + id +
-                ", wpIdBegin=" + wpIdBegin +
-                ", wpIdEnd=" + wpIdEnd +
-                ", GCcoure=" + GCcoure +
-                ", GCDist=" + GCDist +
-                ", RLCoure=" + RLCoure +
-                ", RLDist=" + RLDist +
-                ", legNote=" + legNote +
+                ", name='" + name + '\'' +
+                ", GCcoure=" + String.format("%.1f",GCcoure) +
+                ", GCDist=" + String.format("%.2f",GCDist) +
+                ", RLCoure=" + String.format("%.1f",RLCoure) +
+                ", RLDist=" + String.format("%.2f",RLDist) +
+                ", depth= " + depth +
+                ", waterDensity= " + waterDensity +
+                ", localUKCreq= " + localUKCreq +
+                ", catzoc= " + catzoc +
+                ", minDepthPos= " + minDepthPos +
                 '}';
     }
+
     public String show(){
         return String.format("%d. %s - Dist: %f | Course %f%n",id,name, GCDist, GCcoure);
+    }
+
+    public double getDepth() {
+        return depth;
+    }
+
+    public void setDepth(double depth) {
+        this.depth = depth;
+    }
+
+    public double getWaterDensity() {
+        return waterDensity;
+    }
+
+    public void setWaterDensity(double waterDensity) {
+        this.waterDensity = waterDensity;
+    }
+
+    public double getLocalUKCreq() {
+        return localUKCreq;
+    }
+
+    public void setLocalUKCreq(double localUKCreq) {
+        this.localUKCreq = localUKCreq;
     }
 }

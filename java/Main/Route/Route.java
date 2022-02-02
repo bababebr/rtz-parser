@@ -8,13 +8,14 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.TreeMap;
 
 public class Route implements Serializable {
     private static final long serialVersionUID = -3982444376385756354L;
     private int id;
     private String routeName;
-    private TreeMap<Integer, Waypoint> waypointsTreeMap = new TreeMap<>();
+    private TreeMap<Integer, Waypoint> waypointsTreeMap;
     private ArrayList<Leg> legList;
     private byte[] sourceRTZ;
     private double[] distanceSailed_GC;
@@ -155,6 +156,13 @@ public class Route implements Serializable {
      * Default Getters and Setters
      * @return
      */
+    public Map<String, double[]> getWpCoordinates(){
+        Map<String, double[]> coordinatesList = new TreeMap<>();
+        for (Waypoint w : waypointsTreeMap.values()) {
+            coordinatesList.put(w.getName(), w.getPosition().getCoords());
+        }
+        return coordinatesList;
+    }
 
     public ZonedDateTime getDepartureTime() {
         return departureTime;
