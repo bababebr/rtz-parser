@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<route xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.cirm.org/RTZ/1/0" xsi:schemaLocation="http://www.cirm.org/rtz/RTZ Schema version 1_0.xsd" version="1.0">
+  <routeInfo routeName="GC" />
+  <waypoints>
+    <waypoint id="1" revision="0" radius="0">
+      <position lat="22.406732" lon="60.695142" />
+    </waypoint>
+    <waypoint id="2" revision="0" radius="2">
+      <position lat="23.506574" lon="62.14163" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Orthodrome" speedMin="1" speedMax="15" />
+    </waypoint>
+    <waypoint id="3" revision="0" radius="2">
+      <position lat="23.233371" lon="65.314441" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Orthodrome" speedMin="1" speedMax="15" />
+    </waypoint>
+    <waypoint id="4" revision="0" radius="0">
+      <position lat="21.633036" lon="64.202389" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Orthodrome" speedMin="1" speedMax="15" />
+    </waypoint>
+  </waypoints>
+  <schedules>
+    <schedule id="1" name="CalculatedSchedule">
+      <calculated>
+        <sheduleElement waypointId="2" speed="10" />
+        <sheduleElement waypointId="3" speed="10" />
+        <sheduleElement waypointId="4" speed="10" />
+      </calculated>
+    </schedule>
+  </schedules>
+</route>

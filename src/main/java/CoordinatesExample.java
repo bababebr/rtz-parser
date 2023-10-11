@@ -1,4 +1,4 @@
-import Tools.Coordinates;
+import units.Coordinates;
 
 public class CoordinatesExample {
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class CoordinatesExample {
          *
          *  */
         System.out.println("c1 to double: " + c1.getX() + " " + c1.getY());
-        System.out.println("c3 to string: " + c3.toString());
+        System.out.println("c3 to string: " + c3);
 
         /**
          * Check if two Coordinates objects locates in the same geographical position

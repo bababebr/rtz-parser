@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<route version="1.0" xmlns="http://www.cirm.org/RTZ/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cirm.org/RTZ/1/0/rtz.xsd">
+  <routeInfo routeName="095 B Singapore OMU 2  - Fujairah, UAE " />
+  <waypoints>
+    <defaultWaypoint radius="1">
+      <leg geometryType="Loxodrome" portsideXTD="0.0539956803455724" speedMax="12" speedMin="8" starboardXTD="0.0539956803455724" />
+    </defaultWaypoint>
+    <waypoint id="1" revision="660" name="OMU 2" radius="0">
+      <position lat="1.237933" lon="103.691633" />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="3.0866666666666664" MinTurnSpeed="4.63" MaxTurnSpeed="4.63" LeftOffTrackAlarmLimitForTurn="370" RightOffTrackAlarmLimitForTurn="370" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="3" revision="687" name="Off Universal Terminal" radius="0.15">
+      <position lat="1.229998" lon="103.692733" />
+      <leg starboardXTD="0.03" portsideXTD="0.1" geometryType="Loxodrome" speedMin="1" speedMax="5" legNote2="Master in CONN, Ch. Officer, extra Lookout  on the bridge, HS, BML=4 / ERL=3. Air Draft not restricted. UKC 10% of ship's&#10;static draft required. both anchors ready , crew st-by , Echosaunder on " />
+    </waypoint>
+    <waypoint id="4" revision="322" name="Sinki Fairway" radius="0.5">
+      <position lat="1.207033" lon="103.6659" />
+      <leg starboardXTD="0.15" portsideXTD="0.2" geometryType="Loxodrome" speedMin="1" speedMax="6" legNote2="Master in CONN, Ch. Officer, extra Lookout  on the bridge, HS, BML=4 / ERL=3. Air Draft not restricted. UKC 10% of ship's&#10;static draft required." />
+    </waypoint>
+    <waypoint id="5" revision="296" name="Sudong Anchorage" radius="0.1">
+      <position lat="1.188383" lon="103.686867" />
+      <leg starboardXTD="0.3" portsideXTD="0.3" geometryType="Loxodrome" speedMin="1" speedMax="6" legNote2="Master in CONN, Ch. Officer, extra Lookout  on the bridge, HS, BML=4 / ERL=3. Air Draft not restricted. UKC 10% of ship's&#10;static draft required." />
+    </waypoint>
+    <waypoint id="2" revision="218" name="N. NIPA" radius="0.1">
+      <position lat="1.180333" lon="103.671483" />
+      <leg starboardXTD="0.3" portsideXTD="0.3" geometryType="Loxodrome" speedMin="1" speedMax="8" legNote2="Master in CONN, Ch. Officer, extra Lookout  on the bridge, HS, BML=4 / ERL=3. Air Draft not restricted. UKC 10% of ship's&#10;static draft required. &#10;Caution TSS crossing Area  " />
+    </waypoint>
+    <waypoint id="6" revision="109" name="Johor vts" radius="0.1">
+      <position lat="1.222533" lon="103.484633" />
+      <leg starboardXTD="0.3" portsideXTD="0.3" geometryType="Loxodrome" speedMin="1" speedMax="8" legNote2="Master in CONN, Ch. Officer, extra Lookout  on the bridge, HS, BML=4 / ERL=3. Air Draft not restricted. UKC 10% of ship's&#10;static draft required.&#10;CAUTION TSS CROSSING AREA, PAY ATANTION FOR: CROSSING VSL FROM TANJUNG PELEPAS , SINKI FAIRWAY" />
+    </waypoint>
+    <waypoint id="8" revision="13" name="P.Kukup" radius="1">
+      <position lat="1.24" lon="103.41" />
+      <leg starboardXTD="0.3" portsideXTD="0.3" geometryType="Loxodrome" speedMin="1" speedMax="8" legNote2="Master in CONN, Ch. Officer, extra Lookout  on the bridge, HS, BML=4 / ERL=3. Air Draft not restricted. UKC 10% of ship's&#10;static draft required. CAUTION FOR CROSSING VSL , FISHING BOAT AND TUGS" />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="5.144" MinTurnSpeed="5.144" MaxTurnSpeed="5.144" LeftOffTrackAlarmLimitForTurn="556" RightOffTrackAlarmLimitForTurn="556" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="9" revision="16" name="P.Tunda" radius="1">
+      <position lat="1.391667" lon="103.21" />
+      <leg starboardXTD="0.6" portsideXTD="0.4" geometryType="Loxodrome" speedMin="10" speedMax="10" legNote2="Master in CONN, extra AB on the bridge, BML=4 / ERL=3. Air Draft not restricted. UKC 10% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="555" RightOffTrackAlarmLimitForTurn="555" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="10" revision="2" name="Mudah Utara" radius="1">
+      <position lat="1.641667" lon="102.875" />
+      <leg starboardXTD="0.299676" portsideXTD="0.4" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="OOW in CONN, BML=2 / ERL=3. UKC 10% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="926" RightOffTrackAlarmLimitForTurn="926" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="11" revision="29" name="Pulau Undan" radius="1">
+      <position lat="1.94225" lon="102.272083" />
+      <leg starboardXTD="0.6" portsideXTD="0.6" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="OOW in CONN, BML=2 / ERL=3. UKC 10% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="926" RightOffTrackAlarmLimitForTurn="926" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="7" revision="2" radius="1">
+      <position lat="2.105367" lon="102.093816" />
+      <leg starboardXTD="0.8" portsideXTD="1" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="OOW in CONN, BML=2 / ERL=3. UKC 10% of ship's&#10;static draft required." />
+    </waypoint>
+    <waypoint id="13" revision="5" name="Sepat" radius="1">
+      <position lat="2.578333" lon="101.5" />
+      <leg starboardXTD="0.8" portsideXTD="1" geometryType="Loxodrome" speedMin="10" speedMax="12" legInfo="caution tss crossing area" />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="926" RightOffTrackAlarmLimitForTurn="926" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="14" revision="11" name="One Fathom Bank." radius="1">
+      <position lat="2.838333" lon="100.99" />
+      <leg starboardXTD="0.5" portsideXTD="0.6" geometryType="Loxodrome" speedMin="10" speedMax="15" legNote2="Master in CONN, Ch. Officer, extra AB on the&#10;bridge, BML=4 / ERL=3. Air Draft not restricted. UKC 10% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="556" RightOffTrackAlarmLimitForTurn="556" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="15" revision="5" name="One Fathom Bank" radius="1">
+      <position lat="2.941667" lon="100.906667" />
+      <leg starboardXTD="0.5" portsideXTD="0.5" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="Master in CONN, Ch. Officer, extra AB on the&#10;bridge, BML=4 / ERL=3. Air Draft not restricted. UKC 10% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="926" RightOffTrackAlarmLimitForTurn="926" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="16" revision="5" name="Malacca Strait Dep." radius="4">
+      <position lat="3.078333" lon="100.753333" />
+      <leg starboardXTD="0.5" portsideXTD="0.5" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="Master in CONN, Ch. Officer, extra AB on the&#10;bridge, BML=4 / ERL=3. Air Draft not restricted. UKC 10% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="1852" RightOffTrackAlarmLimitForTurn="1852" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="12" revision="2" radius="4">
+      <position lat="3.925567" lon="100.036867" />
+      <leg starboardXTD="2" portsideXTD="2" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="OOW in CONN, BML=1,2 / ERL=1. UKC 50% of ship's&#10;static draft required." />
+    </waypoint>
+    <waypoint id="17" revision="130" name="Malacca Strait." radius="4">
+      <position lat="5.976716" lon="98.026483" />
+      <leg starboardXTD="2" portsideXTD="2" geometryType="Loxodrome" speedMin="10" speedMax="12" />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="1850" RightOffTrackAlarmLimitForTurn="1850" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="18" revision="2" name="Off Rondo" radius="4">
+      <position lat="6.416667" lon="95.2" />
+      <leg starboardXTD="2.000001" portsideXTD="2.000001" geometryType="Loxodrome" speedMin="10" speedMax="12" legInfo="when depth over 100 mtr Echosaunder to be off" legNote2="OOW in CONN, BML=1,2 / ERL=1. UKC 50% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="3704.001348256" RightOffTrackAlarmLimitForTurn="3704.001348256" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="21" revision="2" radius="4">
+      <position lat="6.41225" lon="94.895283" />
+      <leg starboardXTD="2.000001" portsideXTD="2.000001" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="OOW in CONN, BML=1,2 / ERL=1. UKC 50% of ship's&#10;static draft required." />
+    </waypoint>
+    <waypoint id="30" revision="1" radius="4">
+      <position lat="6.003517" lon="94.3332" />
+      <leg starboardXTD="2.000001" portsideXTD="2.000001" geometryType="Loxodrome" speedMin="10" speedMax="12" />
+    </waypoint>
+    <waypoint id="19" revision="215" name="Approach to Sri Lanka" radius="4">
+      <position lat="5.512249" lon="80.65235" />
+      <leg starboardXTD="2.000001" portsideXTD="2.000001" geometryType="Loxodrome" speedMin="10" speedMax="12" />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="5.144" MinTurnSpeed="5.144" MaxTurnSpeed="5.144" LeftOffTrackAlarmLimitForTurn="1852" RightOffTrackAlarmLimitForTurn="1852" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="20" revision="188" name="TSS Sri lanka" radius="4">
+      <position lat="5.512249" lon="80.455867" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="10" speedMax="10" legNote2="OOW in CONN, BML=1,2 / ERL=1. UKC 50% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="1850" RightOffTrackAlarmLimitForTurn="1850" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="22" revision="74" name="078E Deg. UKMTO" radius="4">
+      <position lat="6.5136" lon="78.000002" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="OOW in CONN, BML=1,2 / ERL=1. UKC 50% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="3704.001348256" RightOffTrackAlarmLimitForTurn="3704.001348256" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="24" revision="1" name="074E Deg. IFC" radius="4">
+      <position lat="8.489733" lon="74" />
+      <leg starboardXTD="2.000001" portsideXTD="2.000001" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="OOW in CONN, BML=1,2 / ERL=1. UKC 50% of ship's&#10;static draft required." />
+    </waypoint>
+    <waypoint id="28" revision="1" name="Nine Degree Channel TSS Ent." radius="4">
+      <position lat="8.767967" lon="73.435183" />
+      <leg starboardXTD="2.000001" portsideXTD="2.000001" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="OOW in CONN, BML=1,2 / ERL=1. UKC 50% of ship's&#10;static draft required." />
+    </waypoint>
+    <waypoint id="23" revision="113" name="Nine Degree Channel TSS out" radius="4">
+      <position lat="9.563833" lon="72.28685" />
+      <leg starboardXTD="2.000001" portsideXTD="2.000001" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="OOW in CONN, BML=1,2 / ERL=1. UKC 50% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="3704.001348256" RightOffTrackAlarmLimitForTurn="3704.001348256" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="25" revision="4" name="Arabian Sea" radius="4">
+      <position lat="23.583333" lon="59.7" />
+      <leg starboardXTD="2.000001" portsideXTD="2.000001" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="OOW in CONN, BML=1,2 / ERL=1. UKC 50% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="3704.001348256" RightOffTrackAlarmLimitForTurn="3704.001348256" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="29" revision="6" name="058E Deg." radius="4">
+      <position lat="24.517733" lon="58.000017" />
+      <leg starboardXTD="2.000001" portsideXTD="2.000001" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="OOW in CONN, BML=1,2 / ERL=1. UKC 50% of ship's&#10;static draft required." />
+    </waypoint>
+    <waypoint id="26" revision="8" name="Approach to Fujairah Anch." radius="4">
+      <position lat="25.236667" lon="56.683334" />
+      <leg starboardXTD="2.000001" portsideXTD="2.000001" geometryType="Loxodrome" speedMin="10" speedMax="12" legNote2="Master in CONN, BML=4 / ERL=4. Air Draft not restricted. UKC 10% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="3.087" MinTurnSpeed="3.087" MaxTurnSpeed="3.087" LeftOffTrackAlarmLimitForTurn="1852" RightOffTrackAlarmLimitForTurn="1852" />
+        </extension>
+      </extensions>
+    </waypoint>
+    <waypoint id="27" revision="16" name="Fujairah Anchorage B" radius="0">
+      <position lat="25.236667" lon="56.50415" />
+      <leg starboardXTD="1" portsideXTD="1" geometryType="Loxodrome" speedMin="3" speedMax="5" legNote2="Master in CONN, BML=4 / ERL=4. Air Draft not restricted. UKC 10% of ship's&#10;static draft required." />
+      <extensions>
+        <extension manufacturer="Sperry" name="AdditionalWaypointData">
+          <AdditionalWaypointData TurnSpeed="6.173" MinTurnSpeed="6.173" MaxTurnSpeed="6.173" LeftOffTrackAlarmLimitForTurn="1850" RightOffTrackAlarmLimitForTurn="1850" />
+        </extension>
+      </extensions>
+    </waypoint>
+  </waypoints>
+  <schedules>
+    <schedule id="1" name="CalculatedSchedule">
+      <calculated>
+        <sheduleElement waypointId="1" etd="2016-09-24T17:00:05Z" />
+        <sheduleElement waypointId="3" speed="3" />
+        <sheduleElement waypointId="4" speed="4" />
+        <sheduleElement waypointId="5" speed="6" />
+        <sheduleElement waypointId="2" speed="2" />
+        <sheduleElement waypointId="6" speed="8" />
+        <sheduleElement waypointId="8" speed="8" />
+        <sheduleElement waypointId="9" speed="10" />
+        <sheduleElement waypointId="10" speed="10" />
+        <sheduleElement waypointId="11" speed="10" />
+        <sheduleElement waypointId="7" speed="10" />
+        <sheduleElement waypointId="13" speed="10" />
+        <sheduleElement waypointId="14" speed="10" />
+        <sheduleElement waypointId="15" speed="10" />
+        <sheduleElement waypointId="16" speed="10" />
+        <sheduleElement waypointId="12" speed="10" />
+        <sheduleElement waypointId="17" speed="10" />
+        <sheduleElement waypointId="18" speed="10" />
+        <sheduleElement waypointId="21" speed="10" />
+        <sheduleElement waypointId="30" speed="10" />
+        <sheduleElement waypointId="19" speed="10" />
+        <sheduleElement waypointId="20" speed="10" />
+        <sheduleElement waypointId="22" speed="10" />
+        <sheduleElement waypointId="24" speed="10" />
+        <sheduleElement waypointId="28" speed="10" />
+        <sheduleElement waypointId="23" speed="10" />
+        <sheduleElement waypointId="25" speed="10" />
+        <sheduleElement waypointId="29" speed="10" />
+        <sheduleElement waypointId="26" speed="10" />
+        <sheduleElement waypointId="27" speed="5" />
+      </calculated>
+    </schedule>
+  </schedules>
+  <extensions>
+    <extension manufacturer="Sperry" name="AdditionalRouteData">
+      <AdditionalRouteData LastModified="2020-04-03T08:37:47.3569956+00:00">
+        <Description />
+        <Notes />
+      </AdditionalRouteData>
+    </extension>
+  </extensions>
+</route>

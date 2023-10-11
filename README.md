@@ -6,5 +6,5 @@ or just work with RTZ files Build-in features:
 * ETA calculation 
 * .RTZ file validator 
 * SQL storage implementation using JPA (Hibernates), allows to store yours Routes in SQL Database 
-* Export Route Object to Route.rtz file and back 
+* Export route Object to route.rtz file and back 
 * Additional package for working with SperryMarine Manual correction objects (see package description and examples)

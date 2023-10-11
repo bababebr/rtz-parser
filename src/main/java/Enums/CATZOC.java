@@ -1,4 +1,4 @@
-package Enums;
+package enums;
 
 /**
  * Associate CATZOC type with basic UKC requirements (% of max. static draught)
@@ -12,5 +12,4 @@ public enum CATZOC {
     U(1);
     private double basicUKC;
     CATZOC(double basicUKC) {this.basicUKC = basicUKC;}
-    public double getBasicUKC(){return basicUKC;}
 }
