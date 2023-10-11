@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<route xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.cirm.org/RTZ/1/0" xsi:schemaLocation="http://www.cirm.org/rtz/RTZ Schema version 1_0.xsd" version="1.0">
+<ru.rtz.route xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.cirm.org/ru.rtz.RTZ/1/0" xsi:schemaLocation="http://www.cirm.org/rtz/ru.rtz.RTZ Schema version 1_0.xsd" version="1.0">
   <routeInfo routeName="GC" />
   <waypoints>
     <waypoint id="1" revision="0" radius="0">
@@ -27,4 +27,4 @@
       </calculated>
     </schedule>
   </schedules>
-</route>
+</ru.rtz.route>

@@ -29,4 +29,4 @@ CREATE TABLE IF NOT EXISTS Routes
 );
 
 INSERT INTO WAYPOINTS (ROUTE_ID, ID, NAME, LAT, LON, LEG_TYPE, LEG_NOTE, RADIUS)
-VALUES (1, 1, 'route', 1, 1, 1, 'qwdwqdw', 6);
+VALUES (1, 1, 'ru.rtz.route', 1, 1, 1, 'qwdwqdw', 6);

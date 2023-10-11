@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<route version="1.0" xmlns="http://www.cirm.org/RTZ/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cirm.org/rtz/RTZ Schema version 1_0.xsd">
+<ru.rtz.route version="1.0" xmlns="http://www.cirm.org/ru.rtz.RTZ/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cirm.org/rtz/ru.rtz.RTZ Schema version 1_0.xsd">
   <routeInfo routeName="Fujairah - Mesaieed_North, Qatar_NAT074" />
   <waypoints>
     <waypoint id="30" revision="100" name="Fujairah Anchorage B" radius="0">
@@ -227,4 +227,4 @@
       </calculated>
     </schedule>
   </schedules>
-</route>
+</ru.rtz.route>

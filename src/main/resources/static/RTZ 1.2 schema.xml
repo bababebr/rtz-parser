@@ -1,19 +1,22 @@
 <!--
-  Route Exchange Format (RTZ)
+  ru.rtz.route Exchange Format (ru.rtz.RTZ)
   XML schema
   Revision 1.2
   Source: IEC PAS 6XXXX
  -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cirm.org/RTZ/1/2" targetNamespace="http://www.cirm.org/RTZ/1/2" elementFormDefault="qualified" attributeFormDefault="unqualified">
 <xsd:annotation>
-<xsd:documentation> RTZ schema version 1.2. For more information on RTZ and this schema, visit http://www.cirm.org/RTZ. RTZ uses the following conventions: all coordinates are relative to the WGS84 datum. All measurements are in nautical miles unless otherwise specified. </xsd:documentation>
+<xsd:documentation>ru.rtz.RTZ schema version 1.2. For more information on ru.rtz.RTZ and this schema, visit
+    http://www.cirm.org/ru.rtz.RTZ. ru.rtz.RTZ uses the following conventions: all coordinates are relative to the WGS84 datum.
+    All measurements are in nautical miles unless otherwise specified.
+</xsd:documentation>
 </xsd:annotation>
 <!--                -->
 <!--  Root element  -->
 <!--                -->
 <xsd:element name="route" type="Route">
 <xsd:annotation>
-<xsd:documentation> Route is the root element in the XML RTZ file. </xsd:documentation>
+<xsd:documentation> ru.rtz.route is the root element in the XML ru.rtz.RTZ file. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 <!--                                -->
@@ -21,12 +24,12 @@
 <!--                                -->
 <xsd:complexType name="Route">
 <xsd:annotation>
-<xsd:documentation> RTZ files contain a number of waypoints, followed with auxiliary schedules. You can add your own elements to the extension section of the RTZ document. </xsd:documentation>
+<xsd:documentation> ru.rtz.RTZ files contain a number of waypoints, followed with auxiliary schedules. You can add your own elements to the extension section of the ru.rtz.RTZ document. </xsd:documentation>
 </xsd:annotation>
 <xsd:sequence>
 <xsd:element name="routeInfo" type="RouteInfo" minOccurs="1" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> Generic route information. </xsd:documentation>
+<xsd:documentation> Generic ru.rtz.route information. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 <xsd:element name="waypoints" type="Waypoints" minOccurs="1" maxOccurs="1">
@@ -41,7 +44,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -58,23 +61,23 @@
 <xsd:sequence>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
 <xsd:attribute name="routeName" type="xsd:string" use="required">
 <xsd:annotation>
-<xsd:documentation>The name of the route.</xsd:documentation>
+<xsd:documentation>The name of the ru.rtz.route.</xsd:documentation>
 </xsd:annotation>
 </xsd:attribute>
 <xsd:attribute name="routeAuthor" type="xsd:string">
 <xsd:annotation>
-<xsd:documentation>The author of route.</xsd:documentation>
+<xsd:documentation>The author of ru.rtz.route.</xsd:documentation>
 </xsd:annotation>
 </xsd:attribute>
 <xsd:attribute name="routeStatus" type="xsd:string">
 <xsd:annotation>
-<xsd:documentation>Status of route.</xsd:documentation>
+<xsd:documentation>Status of ru.rtz.route.</xsd:documentation>
 </xsd:annotation>
 </xsd:attribute>
 <xsd:attribute name="validityPeriodStart" type="xsd:dateTime">
@@ -124,7 +127,7 @@
 </xsd:attribute>
 <xsd:attribute name="optimizationMethod" type="xsd:string">
 <xsd:annotation>
-<xsd:documentation>Route is optimized to meet KPI.</xsd:documentation>
+<xsd:documentation>ru.rtz.route is optimized to meet KPI.</xsd:documentation>
 </xsd:annotation>
 </xsd:attribute>
 <xsd:attribute name="vesselMaxRoll" type="xsd:nonNegativeInteger">
@@ -159,7 +162,7 @@
 </xsd:attribute>
 <xsd:attribute name="routeChangesHistory" type="xsd:string">
 <xsd:annotation>
-<xsd:documentation>Route changes history.</xsd:documentation>
+<xsd:documentation>ru.rtz.route changes history.</xsd:documentation>
 </xsd:annotation>
 </xsd:attribute>
 </xsd:complexType>
@@ -190,12 +193,12 @@
 <!--                             -->
 <xsd:complexType name="Extension">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 <xsd:sequence>
 <xsd:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 </xsd:any>
 </xsd:sequence>
@@ -233,7 +236,7 @@
 <!--                                   -->
 <xsd:complexType name="Extensions">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 <xsd:sequence>
 <xsd:element name="extension" type="Extension" minOccurs="0" maxOccurs="unbounded">
@@ -260,7 +263,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -277,7 +280,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -316,7 +319,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -348,7 +351,7 @@
 <xsd:sequence>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -508,7 +511,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -533,7 +536,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -563,7 +566,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -583,7 +586,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -595,7 +598,7 @@
 <xsd:sequence>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
