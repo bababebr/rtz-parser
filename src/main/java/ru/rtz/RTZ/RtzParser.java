@@ -61,7 +61,8 @@ public class RtzParser implements Serializable {
                     }
                 }
             }
-            return routeService.create(routeName, waypoints);
+            //TODO Route.Create
+            return null;
         } catch (IOException e) {
             throw new RtzException("Cannot parse .rtz ru.rtz.route file.");
         }

@@ -2,15 +2,14 @@ package ru.rtz.route.route.service;
 
 import ru.rtz.route.route.model.Route;
 import ru.rtz.route.route.model.RouteDto;
-import ru.rtz.route.waypoint.model.Waypoint;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface IRouteService {
 
-    Route create(String name, ArrayList<Waypoint> waypoints);
-
     RouteDto getRoute();
 
-    Route addRoute(Route route);
+    RouteDto addRoute(Route route);
+
+    List<RouteDto> getALl();
 }

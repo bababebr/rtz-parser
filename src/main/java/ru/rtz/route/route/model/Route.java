@@ -1,15 +1,17 @@
 package ru.rtz.route.route.model;
 
-import lombok.*;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 import ru.rtz.route.waypoint.model.Waypoint;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.List;
 
 @Entity
-@Table(name = "routes")
+@Table(name = "ROUTES")
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -17,16 +19,16 @@ import java.util.LinkedList;
 public class Route {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
+    Long id;
     String name;
     @ManyToMany
     @JoinTable(
             name = "waypoints",
             joinColumns = @JoinColumn(name = "route_id")
     )
-    ArrayList<Waypoint> waypoints;
+    List<Waypoint> waypoints;
 
-    public Route(String name, ArrayList<Waypoint> waypointMap) {
+    public Route(String name, List<Waypoint> waypointMap) {
         this.name = name;
         this.waypoints = waypointMap;
     }

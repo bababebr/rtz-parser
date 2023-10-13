@@ -6,13 +6,10 @@ import ru.rtz.enums.LegType;
 import ru.rtz.route.waypoint.repository.WaypointId;
 import ru.rtz.units.Coordinates;
 
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "waypoint")
+@Table(name = "waypoints")
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -27,6 +24,7 @@ public class Waypoint {
     double lon;
     double stbdXTD = 0d;
     double portXTD = 0d;
+    @Enumerated(EnumType.STRING)
     LegType legType = LegType.Loxodrome;
     double speedMin = 0d;
     double speedMax = 0d;

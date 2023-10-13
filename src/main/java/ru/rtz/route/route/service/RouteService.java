@@ -6,15 +6,14 @@ import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.rtz.route.leg.service.LegService;
 import ru.rtz.route.route.RouteMapper;
 import ru.rtz.route.route.model.Route;
 import ru.rtz.route.route.model.RouteDto;
 import ru.rtz.route.route.repository.RouteRepository;
-import ru.rtz.route.waypoint.model.Waypoint;
+import ru.rtz.route.waypoint.WaypointMapper;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Getter
 @Service
@@ -24,27 +23,30 @@ public class RouteService implements IRouteService {
 
     RouteRepository routeRepository;
 
+    @Autowired
+    public RouteService(RouteRepository routeRepository) {
+        this.routeRepository = routeRepository;
+    }
+
     @Override
-    public Route addRoute(Route route) {
-        return routeRepository.save(route);
+    public RouteDto addRoute(Route route) {
+        Route savedRoute = routeRepository.save(route);
+        return RouteMapper.routeToDto(savedRoute);
     }
 
     @Override
     public RouteDto getRoute() {
-        RouteDto routeDto = RouteMapper.routeToDto(routeRepository.findById(1L).get());
+        Route route = routeRepository.findById(1L).get();
+        RouteDto routeDto = RouteMapper.routeToDto(route);
+        routeDto.setWaypoints(route.getWaypoints().stream().map(WaypointMapper::waypointToDto).collect(Collectors.toList()));
         return routeDto;
     }
 
     @Override
-    public Route create(String name, ArrayList<Waypoint> waypoints) {
-        Route route = new Route();
-        route.setName(name);
-        route.setWaypoints(waypoints);
-        return route;
+    public List<RouteDto> getALl() {
+        return routeRepository.findAll().stream().map(RouteMapper::routeToDto).collect(Collectors.toList());
     }
-
-
-/*    private LinkedList<Leg> calculateLegs(LinkedList<Waypoint> waypointTreeMap) {
+    /*    private LinkedList<Leg> calculateLegs(LinkedList<Waypoint> waypointTreeMap) {
         LinkedList<Leg> legList = new LinkedList<>();
         for (int i = 1; i <= (waypointTreeMap.size() - 1); i++) {
             legList.add(legService.create(waypointTreeMap.get(i), waypointTreeMap.get(i + 1), i));
