@@ -4,9 +4,9 @@ import ru.rtz.enums.LegType;
 import ru.rtz.exception.WaypointException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.rtz.route.waypoint.model.Waypoint;
-import ru.rtz.route.waypoint.repository.WaypointId;
-import ru.rtz.route.waypoint.repository.WaypointRepository;
+import ru.rtz.model.Waypoint;
+import ru.rtz.model.WaypointId;
+import ru.rtz.repository.WaypointRepository;
 import ru.rtz.units.Coordinates;
 
 @Service

@@ -5,11 +5,11 @@ import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.rtz.route.route.RouteMapper;
-import ru.rtz.route.route.model.Route;
-import ru.rtz.route.route.model.RouteDto;
-import ru.rtz.route.route.repository.RouteRepository;
-import ru.rtz.route.waypoint.WaypointMapper;
+import ru.rtz.dto.RouteDto;
+import ru.rtz.mapper.RouteMapper;
+import ru.rtz.mapper.WaypointMapper;
+import ru.rtz.model.Route;
+import ru.rtz.repository.RouteRepository;
 
 @Service
 @RequiredArgsConstructor
@@ -32,7 +32,6 @@ public class RouteService implements IRouteService {
     public RouteDto getRoute() {
         Route route = routeRepository.findById(1L).get();
         RouteDto routeDto = RouteMapper.routeToDto(route);
-        routeDto.setWaypoints(route.getWaypoints().stream().map(WaypointMapper::waypointToDto).collect(Collectors.toList()));
         return routeDto;
     }
 

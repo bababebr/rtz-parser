@@ -1,9 +1,8 @@
-package ru.rtz.route.leg.model;
+package ru.rtz.model;
 
 import lombok.RequiredArgsConstructor;
 import ru.rtz.enums.CATZOC;
 import ru.rtz.enums.PassageType;
-import ru.rtz.route.waypoint.model.Waypoint;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;

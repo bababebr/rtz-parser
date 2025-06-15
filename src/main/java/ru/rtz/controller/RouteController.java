@@ -1,13 +1,16 @@
-package ru.rtz.route.route.controller;
+package ru.rtz.controller;
 
 import lombok.RequiredArgsConstructor;
+import lombok.Value;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import ru.rtz.dto.RouteDto;
 import ru.rtz.service.LegService;
-import ru.rtz.route.route.model.Route;
-import ru.rtz.route.route.model.RouteDto;
+import ru.rtz.model.Route;
 import ru.rtz.service.RouteService;
 import ru.rtz.service.WaypointService;
 
@@ -22,20 +25,10 @@ public class RouteController {
     private final LegService legService;
     private final WaypointService waypointService;
 
-    @GetMapping("/get")
-    public RouteDto get() {
-        return routeService.getRoute();
+    @GetMapping(value = "/get", consumes = MediaType.APPLICATION_XML_VALUE, produces = MediaType.APPLICATION_XML_VALUE)
+    public RouteDto get(@RequestBody RouteDto routeDto) {
+        System.out.println(routeDto.getWaypoints());
+        return routeDto;
     }
 
-    @PostMapping("/save")
-    public RouteDto save() {
-        Route route = new Route();
-        route.setName("111");
-        return routeService.addRoute(route);
-    }
-
-    @GetMapping("/get/all")
-    public List<RouteDto> getALl() {
-        return routeService.getALl();
-    }
 }

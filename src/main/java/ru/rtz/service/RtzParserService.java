@@ -4,8 +4,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.rtz.enums.LegType;
 import ru.rtz.exception.RtzException;
-import ru.rtz.route.route.model.Route;
-import ru.rtz.route.waypoint.model.Waypoint;
+import ru.rtz.model.Route;
+import ru.rtz.model.Waypoint;
 
 import java.io.*;
 import java.util.ArrayList;

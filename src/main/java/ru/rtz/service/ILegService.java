@@ -1,7 +1,7 @@
 package ru.rtz.service;
 
-import ru.rtz.route.leg.model.Leg;
-import ru.rtz.route.waypoint.model.Waypoint;
+import ru.rtz.model.Leg;
+import ru.rtz.model.Waypoint;
 
 public interface ILegService {
 

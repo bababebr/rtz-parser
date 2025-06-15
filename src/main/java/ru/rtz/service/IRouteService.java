@@ -1,7 +1,7 @@
 package ru.rtz.service;
 
-import ru.rtz.route.route.model.Route;
-import ru.rtz.route.route.model.RouteDto;
+import ru.rtz.dto.RouteDto;
+import ru.rtz.model.Route;
 
 import java.util.List;
 

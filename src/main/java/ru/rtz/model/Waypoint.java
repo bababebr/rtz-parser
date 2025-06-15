@@ -1,9 +1,8 @@
-package ru.rtz.route.waypoint.model;
+package ru.rtz.model;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import ru.rtz.enums.LegType;
-import ru.rtz.route.waypoint.repository.WaypointId;
 import ru.rtz.units.Coordinates;
 
 import jakarta.persistence.*;

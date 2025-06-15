@@ -1,4 +1,4 @@
-package ru.rtz.route.waypoint.repository;
+package ru.rtz.model;
 
 import lombok.*;
 

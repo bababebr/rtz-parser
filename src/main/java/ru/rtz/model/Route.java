@@ -1,11 +1,10 @@
-package ru.rtz.route.route.model;
+package ru.rtz.model;
 
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
-import ru.rtz.route.waypoint.model.Waypoint;
 
 import jakarta.persistence.*;
 import java.util.List;

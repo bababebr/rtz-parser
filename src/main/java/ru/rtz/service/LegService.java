@@ -2,8 +2,8 @@ package ru.rtz.service;
 
 import org.springframework.stereotype.Service;
 
-import ru.rtz.route.leg.model.Leg;
-import ru.rtz.route.waypoint.model.Waypoint;
+import ru.rtz.model.Leg;
+import ru.rtz.model.Waypoint;
 import ru.rtz.utils.NauticalMath;
 
 @Service

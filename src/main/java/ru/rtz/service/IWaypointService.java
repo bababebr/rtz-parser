@@ -1,6 +1,7 @@
 package ru.rtz.service;
 
-import ru.rtz.route.waypoint.model.Waypoint;
+
+import ru.rtz.model.Waypoint;
 
 public interface IWaypointService {
 
