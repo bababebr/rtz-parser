@@ -1,6 +1,6 @@
 package ru.rtz.dto;
 
-import javax.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.*;
 import lombok.Data;
 
 @Data
@@ -9,8 +9,8 @@ import lombok.Data;
 public class GMPointDto {
 
   @XmlAttribute(name = "lat", required = true)
-  private Double latitude;
+  private Double lat;
 
   @XmlAttribute(name = "lon", required = true)
-  private Double longitude;
+  private Double lon;
 }

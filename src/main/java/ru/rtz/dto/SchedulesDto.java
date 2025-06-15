@@ -1,6 +1,7 @@
 package ru.rtz.dto;
 
-import javax.xml.bind.annotation.*;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
+import jakarta.xml.bind.annotation.*;
 import java.util.List;
 import lombok.Data;
 
@@ -10,6 +11,7 @@ import lombok.Data;
 public class SchedulesDto {
 
   @XmlElement(name = "schedule")
+  @JacksonXmlElementWrapper(useWrapping = false)
   private List<ScheduleDto> schedules;
 
   @XmlElement(name = "extensions")

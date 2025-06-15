@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.rtz.dto.RouteDto;
 import ru.rtz.service.LegService;
-import ru.rtz.model.Route;
 import ru.rtz.service.RouteService;
 import ru.rtz.service.WaypointService;
 
@@ -27,7 +26,7 @@ public class RouteController {
 
     @GetMapping(value = "/get", consumes = MediaType.APPLICATION_XML_VALUE, produces = MediaType.APPLICATION_XML_VALUE)
     public RouteDto get(@RequestBody RouteDto routeDto) {
-        System.out.println(routeDto.getWaypoints());
+        System.out.println(routeDto);
         return routeDto;
     }
 

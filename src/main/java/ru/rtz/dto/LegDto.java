@@ -1,6 +1,6 @@
 package ru.rtz.dto;
 
-import javax.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.*;
 import lombok.Data;
 import ru.rtz.enums.GeometryType;
 

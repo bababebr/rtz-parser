@@ -1,6 +1,7 @@
 package ru.rtz.dto;
 
-import javax.xml.bind.annotation.*;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
+import jakarta.xml.bind.annotation.*;
 import java.util.List;
 import lombok.Data;
 
@@ -10,5 +11,6 @@ import lombok.Data;
 public class ExtensionsDto {
 
   @XmlElement(name = "extension")
+  @JacksonXmlElementWrapper(useWrapping = false)
   private List<ExtensionDto> extensions;
 }

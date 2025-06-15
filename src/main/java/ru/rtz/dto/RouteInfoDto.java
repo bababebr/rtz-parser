@@ -1,7 +1,7 @@
 package ru.rtz.dto;
 
 import java.time.LocalDateTime;
-import javax.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.*;
 import lombok.Data;
 
 @Data
