@@ -6,7 +6,7 @@ import ru.rtz.enums.LegType;
 import ru.rtz.route.waypoint.repository.WaypointId;
 import ru.rtz.units.Coordinates;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "waypoints")

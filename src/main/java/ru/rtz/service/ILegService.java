@@ -1,4 +1,4 @@
-package ru.rtz.route.leg.service;
+package ru.rtz.service;
 
 import ru.rtz.route.leg.model.Leg;
 import ru.rtz.route.waypoint.model.Waypoint;

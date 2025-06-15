@@ -34,9 +34,8 @@ public class NauticalMath {
         double sinLatC2 = Math.sin(Math.toRadians(c2.getX()));
         double cosLatC2 = Math.cos(Math.toRadians(c2.getX()));
 
-        double result = Math.toDegrees(Math.acos(Math.cos(Math.toRadians(dLong))
+      return Math.toDegrees(Math.acos(Math.cos(Math.toRadians(dLong))
                 * cosLatC1 * cosLatC2 + (sinLatC1 * sinLatC2))) * 60;
-        return result;
     }
 
     public double GC_Course(Coordinates c1, Coordinates c2) {
@@ -56,7 +55,6 @@ public class NauticalMath {
                 return 90d;
             }
         }
-        //Other Angles
         double dLong = c2.getY() - c1.getY();
         double sinLatC1 = Math.sin(Math.toRadians(c1.getX()));
         double cosLatC1 = Math.cos(Math.toRadians(c1.getX()));

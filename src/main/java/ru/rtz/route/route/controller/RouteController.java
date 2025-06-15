@@ -1,32 +1,26 @@
 package ru.rtz.route.route.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.rtz.route.leg.service.LegService;
+import ru.rtz.service.LegService;
 import ru.rtz.route.route.model.Route;
 import ru.rtz.route.route.model.RouteDto;
-import ru.rtz.route.route.service.RouteService;
-import ru.rtz.route.waypoint.service.WaypointService;
+import ru.rtz.service.RouteService;
+import ru.rtz.service.WaypointService;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/route")
+@RequiredArgsConstructor
 public class RouteController {
 
     private final RouteService routeService;
     private final LegService legService;
     private final WaypointService waypointService;
-
-    @Autowired
-    public RouteController(RouteService routeService, LegService legService, WaypointService waypointService) {
-        this.routeService = routeService;
-        this.legService = legService;
-        this.waypointService = waypointService;
-    }
 
     @GetMapping("/get")
     public RouteDto get() {

@@ -1,14 +1,11 @@
-package ru.rtz.route.leg.service;
+package ru.rtz.service;
 
-import lombok.AccessLevel;
-import lombok.experimental.FieldDefaults;
 import org.springframework.stereotype.Service;
 
 import ru.rtz.route.leg.model.Leg;
 import ru.rtz.route.waypoint.model.Waypoint;
 import ru.rtz.utils.NauticalMath;
 
-@FieldDefaults(level = AccessLevel.PRIVATE)
 @Service
 public class LegService implements ILegService {
     NauticalMath n = new NauticalMath();

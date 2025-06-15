@@ -1,4 +1,4 @@
-package ru.rtz.route.route.service;
+package ru.rtz.service;
 
 import ru.rtz.route.route.model.Route;
 import ru.rtz.route.route.model.RouteDto;

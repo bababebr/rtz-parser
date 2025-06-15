@@ -1,14 +1,14 @@
 <!--
-  ru.rtz.route Exchange Format (ru.rtz.RTZ)
+  ru.rtz.route Exchange Format (ru.rtz.service)
   XML schema
   Revision 1.2
   Source: IEC PAS 6XXXX
  -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cirm.org/RTZ/1/2" targetNamespace="http://www.cirm.org/RTZ/1/2" elementFormDefault="qualified" attributeFormDefault="unqualified">
 <xsd:annotation>
-<xsd:documentation>ru.rtz.RTZ schema version 1.2. For more information on ru.rtz.RTZ and this schema, visit
-    http://www.cirm.org/ru.rtz.RTZ. ru.rtz.RTZ uses the following conventions: all coordinates are relative to the WGS84 datum.
-    All measurements are in nautical miles unless otherwise specified.
+<xsd:documentation>ru.rtz.service schema version 1.2. For more information on ru.rtz.service and this schema, visit
+  http://www.cirm.org/ru.rtz.service. ru.rtz.service uses the following conventions: all coordinates are relative to the WGS84 datum.
+  All measurements are in nautical miles unless otherwise specified.
 </xsd:documentation>
 </xsd:annotation>
 <!--                -->
@@ -16,7 +16,7 @@
 <!--                -->
 <xsd:element name="route" type="Route">
 <xsd:annotation>
-<xsd:documentation> ru.rtz.route is the root element in the XML ru.rtz.RTZ file. </xsd:documentation>
+<xsd:documentation>ru.rtz.route is the root element in the XML ru.rtz.service file.</xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 <!--                                -->
@@ -24,7 +24,9 @@
 <!--                                -->
 <xsd:complexType name="Route">
 <xsd:annotation>
-<xsd:documentation> ru.rtz.RTZ files contain a number of waypoints, followed with auxiliary schedules. You can add your own elements to the extension section of the ru.rtz.RTZ document. </xsd:documentation>
+<xsd:documentation>ru.rtz.service files contain a number of waypoints, followed with auxiliary schedules. You can add your own elements to
+  the extension section of the ru.rtz.service document.
+</xsd:documentation>
 </xsd:annotation>
 <xsd:sequence>
 <xsd:element name="routeInfo" type="RouteInfo" minOccurs="1" maxOccurs="1">
@@ -44,7 +46,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -61,7 +63,7 @@
 <xsd:sequence>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -193,12 +195,12 @@
 <!--                             -->
 <xsd:complexType name="Extension">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 <xsd:sequence>
 <xsd:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 </xsd:any>
 </xsd:sequence>
@@ -236,7 +238,7 @@
 <!--                                   -->
 <xsd:complexType name="Extensions">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 <xsd:sequence>
 <xsd:element name="extension" type="Extension" minOccurs="0" maxOccurs="unbounded">
@@ -263,7 +265,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -280,7 +282,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -319,7 +321,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -351,7 +353,7 @@
 <xsd:sequence>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -511,7 +513,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -536,7 +538,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -566,7 +568,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -586,7 +588,7 @@
 </xsd:element>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -598,7 +600,7 @@
 <xsd:sequence>
 <xsd:element name="extensions" type="Extensions" minOccurs="0" maxOccurs="1">
 <xsd:annotation>
-<xsd:documentation> You can add extend ru.rtz.RTZ by adding your own elements from another schema here. </xsd:documentation>
+<xsd:documentation>You can add extend ru.rtz.service by adding your own elements from another schema here.</xsd:documentation>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>

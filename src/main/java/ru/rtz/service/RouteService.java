@@ -1,9 +1,8 @@
-package ru.rtz.route.route.service;
+package ru.rtz.service;
 
-import lombok.AccessLevel;
-import lombok.Getter;
+import java.util.List;
+import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
-import lombok.experimental.FieldDefaults;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.rtz.route.route.RouteMapper;
@@ -12,12 +11,7 @@ import ru.rtz.route.route.model.RouteDto;
 import ru.rtz.route.route.repository.RouteRepository;
 import ru.rtz.route.waypoint.WaypointMapper;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
-@Getter
 @Service
-@FieldDefaults(level = AccessLevel.PRIVATE)
 @RequiredArgsConstructor
 public class RouteService implements IRouteService {
 

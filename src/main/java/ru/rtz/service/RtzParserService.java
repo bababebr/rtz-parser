@@ -1,38 +1,23 @@
-package ru.rtz.RTZ;
+package ru.rtz.service;
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.experimental.FieldDefaults;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 import ru.rtz.enums.LegType;
 import ru.rtz.exception.RtzException;
 import ru.rtz.route.route.model.Route;
 import ru.rtz.route.waypoint.model.Waypoint;
-import ru.rtz.route.leg.service.LegService;
-import ru.rtz.route.route.service.RouteService;
-import ru.rtz.route.waypoint.service.WaypointService;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.LinkedList;
 
-@Getter
-@Setter
-@FieldDefaults(level = AccessLevel.PRIVATE)
-public class RtzParser implements Serializable {
+@Service
+@RequiredArgsConstructor
+public class RtzParserService implements Serializable {
 
-    //TODO Implement StringTokenizer
     LegService legService;
     WaypointService waypointService;
     RouteService routeService;
 
-    @Autowired
-    public RtzParser(LegService legService, WaypointService waypointService, RouteService routeService) {
-        this.legService = legService;
-        this.waypointService = waypointService;
-        this.routeService = routeService;
-    }
 
     public Route parseRtz(File rtzRoute) {
         ArrayList<Waypoint> waypoints = new ArrayList<>();
