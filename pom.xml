@@ -32,10 +32,6 @@
       <artifactId>spring-data-jpa</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot</artifactId>
-    </dependency>
-    <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
       <scope>runtime</scope>
@@ -58,6 +54,10 @@
     <dependency>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
       <artifactId>jackson-dataformat-xml</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.validation</groupId>
+      <artifactId>jakarta.validation-api</artifactId>
     </dependency>
   </dependencies>
 
@@ -84,29 +84,6 @@
               <version>${lombok-mapstruct-binding.version}</version>
             </path>
           </annotationProcessorPaths>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>jaxb2-maven-plugin</artifactId>
-        <version>3.1.0</version>
-        <executions>
-          <execution>
-            <id>xjc</id>
-            <goals>
-              <goal>xjc</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <xjbSources>
-            <xjbSource>src/main/resources/global.xjb</xjbSource>
-          </xjbSources>
-          <sources>
-            <source>src/main/resources/RTZ_Schema_version_1_2.xsd</source>
-          </sources>
-          <outputDirectory>${basedir}/src/main/java</outputDirectory>
-          <clearOutputDir>false</clearOutputDir>
         </configuration>
       </plugin>
     </plugins>

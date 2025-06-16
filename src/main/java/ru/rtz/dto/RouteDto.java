@@ -1,5 +1,6 @@
 package ru.rtz.dto;
 
+import jakarta.validation.constraints.NotNull;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
@@ -26,5 +27,6 @@ public class RouteDto {
   private ExtensionsDto extensions;
 
   @XmlAttribute(name = "version", required = true)
+  @NotNull
   private String version = "1.2";
 }

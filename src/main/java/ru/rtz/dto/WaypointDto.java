@@ -1,5 +1,6 @@
 package ru.rtz.dto;
 
+import jakarta.validation.constraints.Positive;
 import jakarta.xml.bind.annotation.*;
 import lombok.Data;
 
@@ -18,6 +19,7 @@ public class WaypointDto {
   private ExtensionsDto extensions;
 
   @XmlAttribute(name = "id", required = true)
+  @Positive
   private Long id;
 
   @XmlAttribute(name = "revision", required = true)
